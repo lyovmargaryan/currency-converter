@@ -1,0 +1,11 @@
+<div class="converter-header-wrapper">
+  <div class="logo">
+    <img src="../../assets/images/currency-exchange-illus.png" alt="Logo">
+  </div>
+  <div class="converter-header-wrapper-content">
+    <div *ngFor="let currency of currencies$ | async | keyvalue">
+      <span class="currency-title">{{ currency.key }}</span>
+      <span class="currency-value">{{ currency.value }}</span>
+    </div>
+  </div>
+</div>
